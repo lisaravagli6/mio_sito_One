@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  overflow-x: hidden; 
+  max-width: 100vw;
+}
+
+.font-size-menù{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.font-size-titoli{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: #5B21B6;
+  text-decoration: none;
+}
+
+.font-size-titoletti{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+}
+
+.font-size-paragrafi{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.font-size-titoli-progetti{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #5B21B6;
+  text-decoration: none;
+}
+
+/* MENU */
+.logo img {
+  max-width: 95px;
+  width: 100%;
+  height: auto;
+}
+
+.lista ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 0; 
+  padding: 0; 
+}
+
+.lista li {
+    display: inline-block;
+}
+
+.font-size-menù:hover {
+  color: #5B21B6;
+}
+
+/* Dropdownper progetti */
+.dropdown {
+  position: relative;
+}
+
+.dropdown > span {
+  cursor: pointer;
+}
+
+.dropdown > span:hover {
+  color: #5B21B6;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  padding: 10px 0;
+  margin-top: 0px;
+  z-index: 1001;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 12px 20px;
+  color: black;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.dropdown-item:hover {
+  background-color: #D8B4FE;
+  color: #5B21B6;
+}
+
+/* sfondo */
+h1{
+  color:#5B21B6;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.2; 
+}
+
+.bg-abaco {
+  background-image: url('../img/abaco.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  max-width: 100vw; 
+  background-size: cover; 
+  overflow: hidden;
+}
+
+/* about */
+p {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.foto-primo-piano {
+  padding: 0 40px;
+}
+
+.foto-primo-piano img {
+  width: 100%;
+  height: auto;
+  display: block; 
+}
+
+.foto-canto img {
+  width: 100%;
+  height: auto;
+  display: block; 
+} 
+
+.about-presentazione {
+  background-color: #D8B4FE;
+  min-height: 50vh;
+}
+
+/* frase */
+.frase{
+  background-color: #C084FC;
+  text-align: center;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* comunicazione */
+.comunicazione{
+  background-color: rgba(216, 180, 254, 0.5); /* 0.5 = 50% di opacità */
+  text-align: left;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testo-comunicazione{
+padding-bottom: 200px;
+}
+.testo-progetti{
+  margin-top: 40px;
+}
+
+.testo-paragrafi{
+  margin-bottom: 40px;
+}
+
+/* foto comunicazione */
+.foto-comunicazione{
+  background-color: rgba(216, 180, 254, 0.5); /* 0.5 = 50% di opacità */
+  padding: 40px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box {
+  width: 100%;
+  aspect-ratio: 550 / 600;     /* mantiene la proporzione 550x600 */
+  max-height: 80vh;            /* si adatta allo schermo, massimo 80% in altezza */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* prodotto */
+.prodotto{
+  background-color: rgba(216, 180, 254, 0.5); /* 0.5 = 50% di opacità */
+  text-align: left;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testo-prodotto{
+padding-bottom: 200px;
+}
+
+/* foto prodotto */
+.foto-prodotto{
+  background-color: rgba(216, 180, 254, 0.5); /* 0.5 = 50% di opacità */
+  padding: 40px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+/* workshop */
+.workshop{
+  background-color: rgba(216, 180, 254, 0.5); /* 0.5 = 50% di opacità */
+  text-align: left;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testo-workshop{
+padding-bottom: 200px;
+}
+
+/* foto workshop */
+.foto-workshop {
+   background-color: rgba(216, 180, 254, 0.5); /* 0.5 = 50% di opacità */
+   padding: 40px 40px;
+}
+
+.img-box-2{  
+  width: 100%;
+  aspect-ratio: 440 / 310;     /* mantiene la proporzione 550x600 */
+  max-height: 40vh;            /* si adatta allo schermo, massimo 80% in altezza */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img-box-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* contatti */
+.font-size-contatti{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.bottoni-contatti {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contatti{
+  background-color: white;
+  max-height: 50vh;
+  width: 100%;
+  padding:40px 0;
+}
+
+.btn-email{
+ background-color: #D8B4FE;
+ color: #000;
+}
+
+.btn-social{
+ background-color: #000;
+ color: #D8B4FE;
+}
+
+/* Stile base bottoni */
+.btn-contatto {
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;      /* Centro verticale */
+  justify-content: center;  /* Centro orizzontale */
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+   .navbar-row .logo img {
+    width: 100%;
+    max-width: 120px; /* opzionale */
+  }
+
+  .navbar-row > div:first-child {
+    padding-left: 0 !important;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .lista ul {
+    gap: 20px;
+  }
+
+  .font-size-menù {
+    font-size: 16px; 
+  }
+
+  .font-size-titoli {
+    font-size: 36px; 
+  }
+
+  .font-size-titoletti {
+    font-size: 20px; 
+  }
+
+  .font-size-paragrafi {
+    font-size: 16px; 
+  }
+
+  .font-size-contatti{
+    font-size: 16px; 
+  }
+
+.about-testi {
+  padding: 0 40px;
+}
+
+.img-box-2{
+  padding-bottom: 20px;
+}
+
+  .bottoni-contatti {
+    flex-direction: column;  
+    gap: 20px;               
+    justify-content: center;
+    align-items: center;    
+    margin-top: 20px;
+  }
+  
+  .btn-contatto {
+    width: 100%;            
+    max-width: 200px;        
+  }
+
+  .scritte-contatti{
+    padding: 0 40px;  /* Hai scritto "40pxs" con la "s" */
+  }
+}
+
+/* Menu mobile */
+.mobile-menu {
+  display: none; 
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 220px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  flex-direction: column;
+  padding: 10px 0;
+  z-index: 1001;
+}
+
+.mobile-menu a, .mobile-menu .dropdown span {
+  display: block;
+  padding: 12px 20px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Hover color voci */
+.mobile-menu a:hover, .mobile-menu .dropdown span:hover {
+  color: #5B21B6;
+  background-color: #f5f5f5;
+}
+
+/* Dropdown nascosto di default su mobile */
+.mobile-menu .dropdown-menu {
+  display: none;  /* resta chiuso fino al click */
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.mobile-menu .dropdown.open .dropdown-menu {
+  display: flex;  /* si apre solo se aggiungo la classe open */
+}
+
+.mobile-menu .dropdown-item {
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.mobile-menu .dropdown-item:hover {
+  color: #5B21B6;
+  background-color: #D8B4FE;
+}
